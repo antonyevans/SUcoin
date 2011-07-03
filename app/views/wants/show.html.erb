@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @want.user %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @want.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @want.description %>
+</p>
+
+<p>
+  <b>Catagory:</b>
+  <%= @want.catagory %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @want.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_want_path(@want) %> |
+<%= link_to 'Back', wants_path %>

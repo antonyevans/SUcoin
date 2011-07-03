@@ -1,4 +1,8 @@
 Sucoin::Application.routes.draw do
+  resources :wants
+
+  resources :offers
+
   get "home/index"
 
   devise_for :users
