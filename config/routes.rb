@@ -1,4 +1,16 @@
 Sucoin::Application.routes.draw do
+  get "member/signup"
+
+  get "member/login"
+
+  get "member/logout"
+
+  get "member/delete"
+
+  get "member/edit"
+
+  get "member/forgot_password"
+
   resources :wants
 
   resources :offers

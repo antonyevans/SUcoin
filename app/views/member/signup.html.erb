@@ -1,0 +1,19 @@
+<%= start_form_tag :action=> "signup" %>
+
+<%= error_messages_for 'member' %><br/>
+
+<label for="member_login">membername</label><br/>
+<%= text_field "member", "login", :size => 20 %><br/>
+
+<label for="member_password">Password</label><br/>
+<%= password_field "member", "password", :size => 20 %><br/>
+
+<label for="member_password_confirmation">Password Confirmation</label><br/>
+<%= password_field "member", "password_confirmation", :size => 20 %><br/>
+
+<label for="member_email">Email</label><br/>
+<%= text_field "member", "email",  :size => 20 %><br/>
+
+<%= submit_tag "Signup" %>
+
+<%= end_form_tag %>
