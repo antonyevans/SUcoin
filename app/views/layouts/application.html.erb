@@ -13,10 +13,10 @@
     <div class="header_resize">
       <div class="menu_nav">
         <ul>
-          <li class="active"><%= link_to 'Home', :controller => 'home' %></li>
-          <li><%= link_to 'Offers', :controller => 'offers' %></li>
-          <li><%= link_to 'Wants', :controller => 'wants' %></li>
-          <li><a href="blog.html">Trade</a></li>
+          <% if params[:controller].eql? "home" %><li class="active"><% else %><li><% end %><%= link_to 'Home', :controller => 'home' %></li>
+          <% if params[:controller].eql? "offers" %><li class="active"><% else %><li><% end %><%= link_to 'Offers', :controller => 'offers' %></li>
+          <% if params[:controller].eql? "wants" %><li class="active"><% else %><li><% end %><%= link_to 'Wants', :controller => 'wants' %></li>
+          <% if params[:controller].eql? "trades" %><li class="active"><% else %><li><% end %><a href="blog.html">Trade</a></li>
           <li><a href="contact.html">Sign-out</a></li>
         </ul>
       </div>
@@ -26,7 +26,7 @@
       <div class="clr"></div>
     </div>
   </div>
-
+  
 
 
 <%= yield %>
