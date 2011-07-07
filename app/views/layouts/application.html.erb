@@ -17,6 +17,7 @@
           <% if params[:controller].eql? "offers" %><li class="active"><% else %><li><% end %><%= link_to 'Offers', :controller => 'offers' %></li>
           <% if params[:controller].eql? "wants" %><li class="active"><% else %><li><% end %><%= link_to 'Wants', :controller => 'wants' %></li>
           <% if params[:controller].eql? "trades" %><li class="active"><% else %><li><% end %><a href="blog.html">Trade</a></li>
+          
           <li><a href="contact.html">Sign-out</a></li>
         </ul>
       </div>
@@ -26,10 +27,14 @@
       <div class="clr"></div>
     </div>
   </div>
-  
 
+  <div class="content">
+    <div class="content_resize">
 
-<%= yield %>
+		<%= yield %>
+
+	</div>
+  </div>
 
 </body>
 </html>
